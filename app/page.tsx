@@ -36,7 +36,7 @@ const Header = () => (
                 <div className="flex items-center gap-2.5">
                     <img 
                         src="/logo.png" 
-                        alt="অমর অরুয়াইল" 
+                        alt="আমার অরুয়াইল" 
                         className="h-10 sm:h-14 w-auto object-contain" 
                     />
                 </div>
@@ -101,7 +101,7 @@ const Hero = () => (
                 transition={{ delay: 0.2 }}
                 className="text-3xl sm:text-5xl font-bold text-slate-900 mb-8"
             >
-                Download Amar Aruail APP
+                ডাউনলোড করুন আমার অরুয়াইল অ্যাপ
             </motion.h1>
 
             <motion.div
@@ -113,12 +113,12 @@ const Hero = () => (
                     href="#install"
                     className="inline-block px-10 py-4 bg-emerald-600 text-white text-lg sm:text-xl font-bold rounded-lg shadow-lg hover:bg-emerald-700 transition-all hover:scale-105 active:scale-95"
                 >
-                    Click to Download Free
+                    এখানে ক্লিক করুন
                 </a>
             </motion.div>
             
             <p className="mt-6 text-xs sm:text-sm text-slate-400 max-w-lg mx-auto">
-                Amar Aruail is safe, not virus or malware, thanks for your trust.
+                আমার অরুয়াইল অ্যাপ একজন নাগরিকের সকল ডিজিটাল সেবা প্রদান করে যেমন ব্লাড ডোনার , সাস্থ্য সেবা, জরুরি সেবা ইত্যাদি।
             </p>
         </div>
     </section>
@@ -128,25 +128,22 @@ const VideoSection = () => (
     <section className="py-16 bg-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-4">
              <div className="text-center mb-12">
-                <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">অ্যাপটির ব্যবহার দেখুন</h2>
-                <p className="text-slate-500">আমাদের অ্যাপটি ব্যবহার করা কতটা সহজ তা ভিডিওতে দেখুন</p>
+                <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">অ্যাপটির যেভাবে ইনস্টল করবেন </h2>
+                <p className="text-slate-500">নিচের দেওয়া ভিডিওটি দেখে নিন, এটি আপনাকে অ্যাপটি ইনস্টল করার ধাপে স্পষ্টভাবে বলে দিবে</p>
             </div>
             
             <div className="flex justify-center">
-                <div className="relative w-[280px] sm:w-[320px] aspect-[9/19] bg-slate-900 rounded-[2.5rem] border-[8px] border-slate-900 shadow-2xl overflow-hidden ring-4 ring-slate-100">
-                    {/* Notch */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-slate-900 rounded-b-xl z-20"></div>
-                    
+                <div className="relative w-[280px] sm:w-[320px] aspect-square bg-slate-900 rounded-[1.5rem] border-[4px] border-slate-900 shadow-2xl overflow-hidden ring-2 ring-slate-100">
                     {/* Video Container */}
-                    <div className="w-full h-full bg-slate-800 relative">
+                    <div className="w-full h-full bg-black relative flex items-center justify-center">
                         <video 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                             controls
                             muted
                             playsInline
-                            poster="/01.jpeg"
+                             
                         >
-                            <source src="/app-demo.mp4" type="video/mp4" />
+                            <source src="/video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         
@@ -166,8 +163,8 @@ const InstallationGuide = () => {
         <section id="install" className="py-16 sm:py-24 bg-slate-50">
             <div className="max-w-5xl mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">কীভাবে ইনস্টল করবেন?</h2>
-                    <p className="text-slate-600">প্লে স্টোর ছাড়া গুগল ক্রোম থেকে অ্যাপটি ইনস্টল করার নিয়ম</p>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-emerald-600 mb-4">কীভাবে ইনস্টল করবেন?</h2>
+                    <p className="text-slate-600">প্লে স্টোর ছাড়া গুগল ক্রোম থেকে অ্যাপটি ইনস্টল করার নিয়ম</p>
                 </div>
 
                 <div className="space-y-20">
@@ -175,7 +172,7 @@ const InstallationGuide = () => {
                     <div className="space-y-8">
                         <div className="text-slate-700 text-lg font-medium text-center sm:text-left">
                             <span className="font-bold text-emerald-600 text-2xl">ধাপ ১:</span> <br/>
-                            প্রথমে <span className="font-bold"><a href="https://amar-aruail.vercel.app/" target="_blank">amar-aruail.vercel.app</a></span> লিংকে যান।
+                            প্রথমে আপনার ফোন থেকে গুগল ক্রোম ব্রাউজারটি খুলুন এবং <span className="font-bold"><a href="https://amar-aruail.vercel.app/" target="_blank">amar-aruail.vercel.app</a></span> লিংকে যান।
                         </div>
                         
                         <div className="flex justify-center">
@@ -378,7 +375,7 @@ export default function LandingPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                             <ProfileCard
-                                name="সফটওয়্যার ডেভেলপার"
+                                name="মো: সালাহ উদ্দিন"
                                 role="ডেভেলপার ও ফাউন্ডার"
                                 bio="আমি অরুয়াইলেরই একজন সন্তান। গ্রামের সাধারণ মানুষদের জীবনকে প্রযুক্তির মাধ্যমে আরও সহজ করতেই আমার এই ক্ষুদ্র প্রয়াস।"
                                 image="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=300&q=80"
@@ -388,7 +385,7 @@ export default function LandingPage() {
                             />
 
                             <ProfileCard
-                                name="তথ্য কর্মকর্তা"
+                                name="জনাব বশির আহমেদ "
                                 role="তথ্য ও যোগাযোগ কর্মকর্তা"
                                 bio="সঠিক সময়ে সঠিক তথ্য আপনার কাছে পৌঁছে দেওয়া আমার প্রধান লক্ষ্য। অ্যাপের সকল খবরের সত্যতা আমরা নিশ্চিত করি।"
                                 image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
@@ -398,9 +395,9 @@ export default function LandingPage() {
                             />
                             
                             <ProfileCard
-                                name="বার্তা সম্পাদক"
+                                name="জনাব লিটন আহমেদ"
                                 role="বার্তা সম্পাদক"
-                                bio="অরুয়াইলের প্রতিটি খবর সবার আগে এবং সঠিক ভাবে প্রচার করাই আমার দায়িত্ব। সত্য সংবাদের সাথে থাকার জন্য ধন্যবাদ।"
+                                bio=" সঠিক ভাবে অ্যাপ এর তথ্য প্রচার করাই আমার দায়িত্ব।"
                                 image="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&q=80"
                                 email="editor@amararuail.com"
                                 facebook="https://facebook.com"
